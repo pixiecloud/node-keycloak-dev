@@ -136,8 +136,8 @@
             <span>Longhorn</span>
         </a>
         <a href="https://keycloak.kapistiogroup.com" class="app">
-            <img src="https://cdn-icons-png.flaticon.com/128/1698/1698535.png" alt="Jenkins">
-            <span>Jenkins</span>
+            <img src="https://cdn-icons-png.flaticon.com/128/1698/1698535.png" alt="Keycloak">
+            <span>Keycloak</span>
         </a>
     </div>
 

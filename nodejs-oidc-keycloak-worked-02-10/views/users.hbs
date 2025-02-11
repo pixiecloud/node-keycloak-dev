@@ -1,0 +1,89 @@
+<a href="/users/profile">Profile</a> | <a href="/logout">Logout</a>
+<h1>{{title}}</h1>
+<p>Hi {{user.name.givenName}}</p>
+
+<p>
+  This is a protected page. You have successfully authenticated via Keycloak. 🎉
+</p>
+
+<ul>
+  <li>
+    <p>
+      Try the <a href="/users/profile">profile</a> route to see the full profile for this user.
+    </p>
+  </li>
+  <li>
+    <p>
+      Or <a href="/logout">logout</a> to destroy the session.
+    </p>
+  </li>
+</ul>
+
+<!-- 🌟 App Grid (Visible only after login) -->
+<div class="app-container">
+    <a href="https://argocd.kapistiogroup.com" class="app">
+        <img src="https://cdn-icons-png.flaticon.com/128/2972/2972535.png" alt="ArgoCD">
+        <span>ArgoCD</span>
+    </a>
+    <a href="https://rabbitmqq.kapistiogroup.com" class="app">
+        <img src="https://cdn-icons-png.flaticon.com/128/2942/2942914.png" alt="RabbitMQ">
+        <span>RabbitMQ</span>
+    </a>
+    <a href="https://longhorn.kapistiogroup.com" class="app">
+        <img src="https://cdn-icons-png.flaticon.com/128/4312/4312216.png" alt="Longhorn">
+        <span>Longhorn</span>
+    </a>
+    <a href="https://keycloak.kapistiogroup.com" class="app">
+        <img src="https://cdn-icons-png.flaticon.com/128/1698/1698535.png" alt="Keycloak">
+        <span>Keycloak</span>
+    </a>
+</div>
+
+<style>
+    /* 🌟 Global Styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+        text-align: center;
+    }
+
+    /* 🌟 App Grid */
+    .app-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px auto;
+        max-width: 800px;
+    }
+
+    .app {
+        width: 120px;
+        height: 120px;
+        margin: 15px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #2c3e50;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    .app:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .app img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 8px;
+    }
+</style>
