@@ -55,3 +55,9 @@ npm install
 npm start
 ```
 
+5. ## login as localhost:3000
+
+the app will redirect you through keycloak. Login with these credentials:
+
+username:  user
+password:  password
